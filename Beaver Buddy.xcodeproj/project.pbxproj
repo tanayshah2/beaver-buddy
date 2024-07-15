@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44902DE32C2F6CE5000B9604 /* Beaver_BuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44902DE22C2F6CE5000B9604 /* Beaver_BuddyApp.swift */; };
+		44902DE52C2F6CE5000B9604 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44902DE42C2F6CE5000B9604 /* ContentView.swift */; };
+		44902DE72C2F6CE6000B9604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44902DE62C2F6CE6000B9604 /* Assets.xcassets */; };
+		44902DEA2C2F6CE6000B9604 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44902DE92C2F6CE6000B9604 /* Preview Assets.xcassets */; };
+		44902DF42C2F6CE6000B9604 /* Beaver_BuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44902DF32C2F6CE6000B9604 /* Beaver_BuddyTests.swift */; };
+		44902DFE2C2F6CE6000B9604 /* Beaver_BuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44902DFD2C2F6CE6000B9604 /* Beaver_BuddyUITests.swift */; };
+		44902E002C2F6CE6000B9604 /* Beaver_BuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44902DFF2C2F6CE6000B9604 /* Beaver_BuddyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44902DF02C2F6CE6000B9604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44902DD72C2F6CE5000B9604 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44902DDE2C2F6CE5000B9604;
+			remoteInfo = "Beaver Buddy";
+		};
+		44902DFA2C2F6CE6000B9604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44902DD72C2F6CE5000B9604 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44902DDE2C2F6CE5000B9604;
+			remoteInfo = "Beaver Buddy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44902DDF2C2F6CE5000B9604 /* Beaver Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beaver Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44902DE22C2F6CE5000B9604 /* Beaver_BuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beaver_BuddyApp.swift; sourceTree = "<group>"; };
+		44902DE42C2F6CE5000B9604 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44902DE62C2F6CE6000B9604 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44902DE92C2F6CE6000B9604 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44902DEF2C2F6CE6000B9604 /* Beaver BuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beaver BuddyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44902DF32C2F6CE6000B9604 /* Beaver_BuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beaver_BuddyTests.swift; sourceTree = "<group>"; };
+		44902DF92C2F6CE6000B9604 /* Beaver BuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beaver BuddyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44902DFD2C2F6CE6000B9604 /* Beaver_BuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beaver_BuddyUITests.swift; sourceTree = "<group>"; };
+		44902DFF2C2F6CE6000B9604 /* Beaver_BuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beaver_BuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44902DDC2C2F6CE5000B9604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44902DEC2C2F6CE6000B9604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44902DF62C2F6CE6000B9604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44902DD62C2F6CE5000B9604 = {
+			isa = PBXGroup;
+			children = (
+				44902DE12C2F6CE5000B9604 /* Beaver Buddy */,
+				44902DF22C2F6CE6000B9604 /* Beaver BuddyTests */,
+				44902DFC2C2F6CE6000B9604 /* Beaver BuddyUITests */,
+				44902DE02C2F6CE5000B9604 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44902DE02C2F6CE5000B9604 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44902DDF2C2F6CE5000B9604 /* Beaver Buddy.app */,
+				44902DEF2C2F6CE6000B9604 /* Beaver BuddyTests.xctest */,
+				44902DF92C2F6CE6000B9604 /* Beaver BuddyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44902DE12C2F6CE5000B9604 /* Beaver Buddy */ = {
+			isa = PBXGroup;
+			children = (
+				44902DE22C2F6CE5000B9604 /* Beaver_BuddyApp.swift */,
+				44902DE42C2F6CE5000B9604 /* ContentView.swift */,
+				44902DE62C2F6CE6000B9604 /* Assets.xcassets */,
+				44902DE82C2F6CE6000B9604 /* Preview Content */,
+			);
+			path = "Beaver Buddy";
+			sourceTree = "<group>";
+		};
+		44902DE82C2F6CE6000B9604 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				44902DE92C2F6CE6000B9604 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		44902DF22C2F6CE6000B9604 /* Beaver BuddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				44902DF32C2F6CE6000B9604 /* Beaver_BuddyTests.swift */,
+			);
+			path = "Beaver BuddyTests";
+			sourceTree = "<group>";
+		};
+		44902DFC2C2F6CE6000B9604 /* Beaver BuddyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44902DFD2C2F6CE6000B9604 /* Beaver_BuddyUITests.swift */,
+				44902DFF2C2F6CE6000B9604 /* Beaver_BuddyUITestsLaunchTests.swift */,
+			);
+			path = "Beaver BuddyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44902DDE2C2F6CE5000B9604 /* Beaver Buddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44902E032C2F6CE6000B9604 /* Build configuration list for PBXNativeTarget "Beaver Buddy" */;
+			buildPhases = (
+				44902DDB2C2F6CE5000B9604 /* Sources */,
+				44902DDC2C2F6CE5000B9604 /* Frameworks */,
+				44902DDD2C2F6CE5000B9604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Beaver Buddy";
+			productName = "Beaver Buddy";
+			productReference = 44902DDF2C2F6CE5000B9604 /* Beaver Buddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44902DEE2C2F6CE6000B9604 /* Beaver BuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44902E062C2F6CE6000B9604 /* Build configuration list for PBXNativeTarget "Beaver BuddyTests" */;
+			buildPhases = (
+				44902DEB2C2F6CE6000B9604 /* Sources */,
+				44902DEC2C2F6CE6000B9604 /* Frameworks */,
+				44902DED2C2F6CE6000B9604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44902DF12C2F6CE6000B9604 /* PBXTargetDependency */,
+			);
+			name = "Beaver BuddyTests";
+			productName = "Beaver BuddyTests";
+			productReference = 44902DEF2C2F6CE6000B9604 /* Beaver BuddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44902DF82C2F6CE6000B9604 /* Beaver BuddyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44902E092C2F6CE6000B9604 /* Build configuration list for PBXNativeTarget "Beaver BuddyUITests" */;
+			buildPhases = (
+				44902DF52C2F6CE6000B9604 /* Sources */,
+				44902DF62C2F6CE6000B9604 /* Frameworks */,
+				44902DF72C2F6CE6000B9604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44902DFB2C2F6CE6000B9604 /* PBXTargetDependency */,
+			);
+			name = "Beaver BuddyUITests";
+			productName = "Beaver BuddyUITests";
+			productReference = 44902DF92C2F6CE6000B9604 /* Beaver BuddyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44902DD72C2F6CE5000B9604 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					44902DDE2C2F6CE5000B9604 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					44902DEE2C2F6CE6000B9604 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 44902DDE2C2F6CE5000B9604;
+					};
+					44902DF82C2F6CE6000B9604 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 44902DDE2C2F6CE5000B9604;
+					};
+				};
+			};
+			buildConfigurationList = 44902DDA2C2F6CE5000B9604 /* Build configuration list for PBXProject "Beaver Buddy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44902DD62C2F6CE5000B9604;
+			productRefGroup = 44902DE02C2F6CE5000B9604 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44902DDE2C2F6CE5000B9604 /* Beaver Buddy */,
+				44902DEE2C2F6CE6000B9604 /* Beaver BuddyTests */,
+				44902DF82C2F6CE6000B9604 /* Beaver BuddyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44902DDD2C2F6CE5000B9604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44902DEA2C2F6CE6000B9604 /* Preview Assets.xcassets in Resources */,
+				44902DE72C2F6CE6000B9604 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44902DED2C2F6CE6000B9604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44902DF72C2F6CE6000B9604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44902DDB2C2F6CE5000B9604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44902DE52C2F6CE5000B9604 /* ContentView.swift in Sources */,
+				44902DE32C2F6CE5000B9604 /* Beaver_BuddyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44902DEB2C2F6CE6000B9604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44902DF42C2F6CE6000B9604 /* Beaver_BuddyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44902DF52C2F6CE6000B9604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44902E002C2F6CE6000B9604 /* Beaver_BuddyUITestsLaunchTests.swift in Sources */,
+				44902DFE2C2F6CE6000B9604 /* Beaver_BuddyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44902DF12C2F6CE6000B9604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44902DDE2C2F6CE5000B9604 /* Beaver Buddy */;
+			targetProxy = 44902DF02C2F6CE6000B9604 /* PBXContainerItemProxy */;
+		};
+		44902DFB2C2F6CE6000B9604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44902DDE2C2F6CE5000B9604 /* Beaver Buddy */;
+			targetProxy = 44902DFA2C2F6CE6000B9604 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		44902E012C2F6CE6000B9604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44902E022C2F6CE6000B9604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44902E042C2F6CE6000B9604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Beaver Buddy/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tanay-Shah.Beaver-Buddy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44902E052C2F6CE6000B9604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Beaver Buddy/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tanay-Shah.Beaver-Buddy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44902E072C2F6CE6000B9604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tanay-Shah.Beaver-BuddyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beaver Buddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Beaver Buddy";
+			};
+			name = Debug;
+		};
+		44902E082C2F6CE6000B9604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tanay-Shah.Beaver-BuddyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beaver Buddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Beaver Buddy";
+			};
+			name = Release;
+		};
+		44902E0A2C2F6CE6000B9604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tanay-Shah.Beaver-BuddyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Beaver Buddy";
+			};
+			name = Debug;
+		};
+		44902E0B2C2F6CE6000B9604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tanay-Shah.Beaver-BuddyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Beaver Buddy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44902DDA2C2F6CE5000B9604 /* Build configuration list for PBXProject "Beaver Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44902E012C2F6CE6000B9604 /* Debug */,
+				44902E022C2F6CE6000B9604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44902E032C2F6CE6000B9604 /* Build configuration list for PBXNativeTarget "Beaver Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44902E042C2F6CE6000B9604 /* Debug */,
+				44902E052C2F6CE6000B9604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44902E062C2F6CE6000B9604 /* Build configuration list for PBXNativeTarget "Beaver BuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44902E072C2F6CE6000B9604 /* Debug */,
+				44902E082C2F6CE6000B9604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44902E092C2F6CE6000B9604 /* Build configuration list for PBXNativeTarget "Beaver BuddyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44902E0A2C2F6CE6000B9604 /* Debug */,
+				44902E0B2C2F6CE6000B9604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44902DD72C2F6CE5000B9604 /* Project object */;
+}
