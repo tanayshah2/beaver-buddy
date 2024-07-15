@@ -14,6 +14,9 @@
 		44902DF42C2F6CE6000B9604 /* Beaver_BuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44902DF32C2F6CE6000B9604 /* Beaver_BuddyTests.swift */; };
 		44902DFE2C2F6CE6000B9604 /* Beaver_BuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44902DFD2C2F6CE6000B9604 /* Beaver_BuddyUITests.swift */; };
 		44902E002C2F6CE6000B9604 /* Beaver_BuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44902DFF2C2F6CE6000B9604 /* Beaver_BuddyUITestsLaunchTests.swift */; };
+		44CF47FE2C45E1150096E69A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF47FD2C45E1150096E69A /* MainTabView.swift */; };
+		44CF48002C45E56B0096E69A /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF47FF2C45E56B0096E69A /* BlurEffect.swift */; };
+		44CF48022C45E5950096E69A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF48012C45E5950096E69A /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		44902DF92C2F6CE6000B9604 /* Beaver BuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beaver BuddyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44902DFD2C2F6CE6000B9604 /* Beaver_BuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beaver_BuddyUITests.swift; sourceTree = "<group>"; };
 		44902DFF2C2F6CE6000B9604 /* Beaver_BuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beaver_BuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		44CF47FD2C45E1150096E69A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		44CF47FF2C45E56B0096E69A /* BlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
+		44CF48012C45E5950096E69A /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				44902DE22C2F6CE5000B9604 /* Beaver_BuddyApp.swift */,
 				44902DE42C2F6CE5000B9604 /* ContentView.swift */,
+				44CF47FD2C45E1150096E69A /* MainTabView.swift */,
+				44CF47FF2C45E56B0096E69A /* BlurEffect.swift */,
+				44CF48012C45E5950096E69A /* MenuView.swift */,
 				44902DE62C2F6CE6000B9604 /* Assets.xcassets */,
 				44902DE82C2F6CE6000B9604 /* Preview Content */,
 			);
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44CF48022C45E5950096E69A /* MenuView.swift in Sources */,
 				44902DE52C2F6CE5000B9604 /* ContentView.swift in Sources */,
+				44CF48002C45E56B0096E69A /* BlurEffect.swift in Sources */,
 				44902DE32C2F6CE5000B9604 /* Beaver_BuddyApp.swift in Sources */,
+				44CF47FE2C45E1150096E69A /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

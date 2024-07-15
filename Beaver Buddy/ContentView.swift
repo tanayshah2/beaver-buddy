@@ -1,49 +1,77 @@
 import SwiftUI
 
+enum Destination: Hashable {
+    case settings
+    case shop
+    case calendar
+}
+
 struct ContentView: View {
     @State private var happiness: Double = 0.5
     @State private var coins: Int = 0
+    @State private var selectedTab: Destination? = nil
+    @State private var isMenuVisible: Bool = false
 
     var body: some View {
-        ZStack {
-            Image("background")
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
+        NavigationStack {
+            ZStack {
+                Image("background")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
 
-            VStack {
-                HStack {
-                    VStack {
-                        NavigationLink(destination: SettingsView(happiness: $happiness)) {
-                            Image("settings")
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                                .padding(10)
+                VStack {
+                    HStack {
+                        VStack {
+                            Button(action: { isMenuVisible.toggle() }) {
+                                Image("settings")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .padding(10)
+                            }
+                            Button(action: { isMenuVisible.toggle() }) {
+                                Image("shop")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .padding(10)
+                            }
+                            Button(action: { isMenuVisible.toggle() }) {
+                                Image("calendar")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .padding(10)
+                            }
                         }
-                        NavigationLink(destination: ShopView(coins: $coins)) {
-                            Image("shop")
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                                .padding(10)
-                        }
-                        NavigationLink(destination: CalendarView()) {
-                            Image("calendar")
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                                .padding(10)
-                        }
+                        .padding(.leading, 10)
+                        Spacer()
+                        CoinBoxView(coins: $coins)
+                            .padding(.trailing, 10)
                     }
-                    .padding(.leading, 10)
                     Spacer()
-                    CoinBoxView(coins: $coins)
-                        .padding(.trailing, 10)
+
+                    BeaverView(happiness: $happiness)
+                        .padding(.bottom, 80)
+
+                    Spacer()
                 }
-                Spacer()
 
-                BeaverView(happiness: $happiness)
-                    .padding(.bottom, 80)
-
-                Spacer()
+                if isMenuVisible {
+                    BlurEffect(style: .systemMaterial)
+                        .edgesIgnoringSafeArea(.all)
+                    MenuView(selectedTab: $selectedTab, isMenuVisible: $isMenuVisible)
+                        .transition(.move(edge: .bottom))
+                }
+            }
+            .animation(.easeInOut, value: isMenuVisible)
+            .navigationDestination(for: Destination.self) { destination in
+                switch destination {
+                case .settings:
+                    MainTabView(happiness: $happiness, coins: $coins, initialTab: 0)
+                case .shop:
+                    MainTabView(happiness: $happiness, coins: $coins, initialTab: 1)
+                case .calendar:
+                    MainTabView(happiness: $happiness, coins: $coins, initialTab: 2)
+                }
             }
         }
     }
@@ -83,56 +111,34 @@ struct BeaverView: View {
 
     func getBeaverImageName(for happiness: Double) -> String {
         switch happiness {
-        case 0..<0.1:
-            return "beaver1"
-        case 0.1..<0.2:
-            return "beaver2"
-        case 0.2..<0.3:
-            return "beaver3"
-        case 0.3..<0.4:
-            return "beaver4"
-        case 0.4..<0.5:
-            return "beaver5"
-        case 0.5..<0.6:
-            return "beaver6"
-        case 0.6..<0.7:
-            return "beaver7"
-        case 0.7..<0.8:
-            return "beaver8"
-        case 0.8..<0.9:
-            return "beaver9"
-        case 0.9...1.0:
-            return "beaver10"
-        default:
-            return "beaver1"
+                case 0..<0.1:
+                    return "beaver1"
+                case 0.1..<0.2:
+                    return "beaver2"
+                case 0.2..<0.3:
+                    return "beaver3"
+                case 0.3..<0.4:
+                    return "beaver4"
+                case 0.4..<0.5:
+                    return "beaver5"
+                case 0.5..<0.6:
+                    return "beaver6"
+                case 0.6..<0.7:
+                    return "beaver7"
+                case 0.7..<0.8:
+                    return "beaver8"
+                case 0.8..<0.9:
+                    return "beaver9"
+                case 0.9...1.0:
+                    return "beaver10"
+                default:
+                    return "beaver1"
+                }
+            }
         }
-    }
-}
 
-struct CalendarView: View {
-    var body: some View {
-        Text("Calendar View")
-    }
-}
-
-struct ShopView: View {
-    @Binding var coins: Int
-
-    var body: some View {
-        Text("Shop View")
-    }
-}
-
-struct SettingsView: View {
-    @Binding var happiness: Double
-
-    var body: some View {
-        Text("Settings View")
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+        struct ContentView_Previews: PreviewProvider {
+            static var previews: some View {
+                ContentView()
+            }
+        }
