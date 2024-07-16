@@ -3,59 +3,40 @@ import SwiftUI
 struct MainTabView: View {
     @Binding var happiness: Double
     @Binding var coins: Int
-    @State private var selectedTab: Int
-
-    init(happiness: Binding<Double>, coins: Binding<Int>, initialTab: Int) {
-        self._happiness = happiness
-        self._coins = coins
-        self._selectedTab = State(initialValue: initialTab)
-    }
+    @Binding var selectedTab: Destination
 
     var body: some View {
         TabView(selection: $selectedTab) {
             SettingsView(happiness: $happiness)
                 .tabItem {
-                    Label("Settings", systemImage: "gearshape")
+                    Image("settings")
+                    Text("Settings")
                 }
-                .tag(0)
+                .tag(Destination.settings)
+
             ShopView(coins: $coins)
                 .tabItem {
-                    Label("Shop", systemImage: "cart")
+                    Image("shop")
+                    Text("Shop")
                 }
-                .tag(1)
+                .tag(Destination.shop)
+
             CalendarView()
                 .tabItem {
-                    Label("Calendar", systemImage: "calendar")
+                    Image("calendar")
+                    Text("Calendar")
                 }
-                .tag(2)
+                .tag(Destination.calendar)
         }
     }
 }
 
-struct SettingsView: View {
-    @Binding var happiness: Double
-
-    var body: some View {
-        Text("Settings View")
-    }
-}
-
-struct ShopView: View {
-    @Binding var coins: Int
-
-    var body: some View {
-        Text("Shop View")
-    }
-}
-
-struct CalendarView: View {
-    var body: some View {
-        Text("Calendar View")
-    }
-}
-
 struct MainTabView_Previews: PreviewProvider {
+    @State static var happiness: Double = 0.5
+    @State static var coins: Int = 0
+    @State static var selectedTab: Destination = .settings
+
     static var previews: some View {
-        MainTabView(happiness: .constant(0.5), coins: .constant(0), initialTab: 0)
+        MainTabView(happiness: $happiness, coins: $coins, selectedTab: $selectedTab)
     }
 }

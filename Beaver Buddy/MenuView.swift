@@ -16,22 +16,33 @@ struct MenuView: View {
                         .padding()
                 }
             }
-            Spacer()
-            Button(action: { selectedTab = .settings; isMenuVisible = false }) {
-                Text("Settings")
-                    .font(.largeTitle)
-                    .padding()
+            HStack {
+                Button(action: { selectedTab = .settings }) {
+                    Image("settings")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .padding()
+                        .background(selectedTab == .settings ? Color.gray.opacity(0.3) : Color.clear)
+                        .cornerRadius(10)
+                }
+                Button(action: { selectedTab = .shop }) {
+                    Image("shop")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .padding()
+                        .background(selectedTab == .shop ? Color.gray.opacity(0.3) : Color.clear)
+                        .cornerRadius(10)
+                }
+                Button(action: { selectedTab = .calendar }) {
+                    Image("calendar")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .padding()
+                        .background(selectedTab == .calendar ? Color.gray.opacity(0.3) : Color.clear)
+                        .cornerRadius(10)
+                }
             }
-            Button(action: { selectedTab = .shop; isMenuVisible = false }) {
-                Text("Shop")
-                    .font(.largeTitle)
-                    .padding()
-            }
-            Button(action: { selectedTab = .calendar; isMenuVisible = false }) {
-                Text("Calendar")
-                    .font(.largeTitle)
-                    .padding()
-            }
+            .padding()
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)

@@ -23,23 +23,38 @@ struct ContentView: View {
                 VStack {
                     HStack {
                         VStack {
-                            Button(action: { isMenuVisible.toggle() }) {
+                            Button(action: {
+                                selectedTab = .settings
+                                isMenuVisible = true
+                            }) {
                                 Image("settings")
                                     .resizable()
                                     .frame(width: 50, height: 50)
                                     .padding(10)
+                                    .background(selectedTab == .settings && isMenuVisible ? Color.gray.opacity(0.3) : Color.clear)
+                                    .cornerRadius(10)
                             }
-                            Button(action: { isMenuVisible.toggle() }) {
+                            Button(action: {
+                                selectedTab = .shop
+                                isMenuVisible = true
+                            }) {
                                 Image("shop")
                                     .resizable()
                                     .frame(width: 50, height: 50)
                                     .padding(10)
+                                    .background(selectedTab == .shop && isMenuVisible ? Color.gray.opacity(0.3) : Color.clear)
+                                    .cornerRadius(10)
                             }
-                            Button(action: { isMenuVisible.toggle() }) {
+                            Button(action: {
+                                selectedTab = .calendar
+                                isMenuVisible = true
+                            }) {
                                 Image("calendar")
                                     .resizable()
                                     .frame(width: 50, height: 50)
                                     .padding(10)
+                                    .background(selectedTab == .calendar && isMenuVisible ? Color.gray.opacity(0.3) : Color.clear)
+                                    .cornerRadius(10)
                             }
                         }
                         .padding(.leading, 10)
@@ -66,11 +81,11 @@ struct ContentView: View {
             .navigationDestination(for: Destination.self) { destination in
                 switch destination {
                 case .settings:
-                    MainTabView(happiness: $happiness, coins: $coins, initialTab: 0)
+                    SettingsView(happiness: $happiness)
                 case .shop:
-                    MainTabView(happiness: $happiness, coins: $coins, initialTab: 1)
+                    ShopView(coins: $coins)
                 case .calendar:
-                    MainTabView(happiness: $happiness, coins: $coins, initialTab: 2)
+                    CalendarView()
                 }
             }
         }
@@ -111,34 +126,34 @@ struct BeaverView: View {
 
     func getBeaverImageName(for happiness: Double) -> String {
         switch happiness {
-                case 0..<0.1:
-                    return "beaver1"
-                case 0.1..<0.2:
-                    return "beaver2"
-                case 0.2..<0.3:
-                    return "beaver3"
-                case 0.3..<0.4:
-                    return "beaver4"
-                case 0.4..<0.5:
-                    return "beaver5"
-                case 0.5..<0.6:
-                    return "beaver6"
-                case 0.6..<0.7:
-                    return "beaver7"
-                case 0.7..<0.8:
-                    return "beaver8"
-                case 0.8..<0.9:
-                    return "beaver9"
-                case 0.9...1.0:
-                    return "beaver10"
-                default:
-                    return "beaver1"
-                }
-            }
+        case 0..<0.1:
+            return "beaver1"
+        case 0.1..<0.2:
+            return "beaver2"
+        case 0.2..<0.3:
+            return "beaver3"
+        case 0.3..<0.4:
+            return "beaver4"
+        case 0.4..<0.5:
+            return "beaver5"
+        case 0.5..<0.6:
+            return "beaver6"
+        case 0.6..<0.7:
+            return "beaver7"
+        case 0.7..<0.8:
+            return "beaver8"
+        case 0.8..<0.9:
+            return "beaver9"
+        case 0.9...1.0:
+            return "beaver10"
+        default:
+            return "beaver1"
         }
+    }
+}
 
-        struct ContentView_Previews: PreviewProvider {
-            static var previews: some View {
-                ContentView()
-            }
-        }
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}

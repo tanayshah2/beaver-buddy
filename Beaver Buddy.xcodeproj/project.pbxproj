@@ -17,6 +17,9 @@
 		44CF47FE2C45E1150096E69A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF47FD2C45E1150096E69A /* MainTabView.swift */; };
 		44CF48002C45E56B0096E69A /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF47FF2C45E56B0096E69A /* BlurEffect.swift */; };
 		44CF48022C45E5950096E69A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF48012C45E5950096E69A /* MenuView.swift */; };
+		44CF48042C45F5C30096E69A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF48032C45F5C30096E69A /* SettingsView.swift */; };
+		44CF48062C460CDF0096E69A /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF48052C460CDF0096E69A /* ShopView.swift */; };
+		44CF48082C460CEF0096E69A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF48072C460CEF0096E69A /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		44CF47FD2C45E1150096E69A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		44CF47FF2C45E56B0096E69A /* BlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
 		44CF48012C45E5950096E69A /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		44CF48032C45F5C30096E69A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		44CF48052C460CDF0096E69A /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		44CF48072C460CEF0096E69A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				44CF47FF2C45E56B0096E69A /* BlurEffect.swift */,
 				44CF48012C45E5950096E69A /* MenuView.swift */,
 				44902DE62C2F6CE6000B9604 /* Assets.xcassets */,
+				44CF48032C45F5C30096E69A /* SettingsView.swift */,
+				44CF48052C460CDF0096E69A /* ShopView.swift */,
+				44CF48072C460CEF0096E69A /* CalendarView.swift */,
 				44902DE82C2F6CE6000B9604 /* Preview Content */,
 			);
 			path = "Beaver Buddy";
@@ -268,7 +277,10 @@
 			files = (
 				44CF48022C45E5950096E69A /* MenuView.swift in Sources */,
 				44902DE52C2F6CE5000B9604 /* ContentView.swift in Sources */,
+				44CF48082C460CEF0096E69A /* CalendarView.swift in Sources */,
+				44CF48062C460CDF0096E69A /* ShopView.swift in Sources */,
 				44CF48002C45E56B0096E69A /* BlurEffect.swift in Sources */,
+				44CF48042C45F5C30096E69A /* SettingsView.swift in Sources */,
 				44902DE32C2F6CE5000B9604 /* Beaver_BuddyApp.swift in Sources */,
 				44CF47FE2C45E1150096E69A /* MainTabView.swift in Sources */,
 			);
