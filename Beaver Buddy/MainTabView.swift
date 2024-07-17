@@ -1,42 +1,35 @@
 import SwiftUI
 
 struct MainTabView: View {
-    @Binding var happiness: Double
-    @Binding var coins: Int
-    @Binding var selectedTab: Destination
+    @State private var coins: Int = 100
 
     var body: some View {
-        TabView(selection: $selectedTab) {
-            SettingsView(happiness: $happiness)
+        TabView {
+            ContentView()
                 .tabItem {
-                    Image("settings")
-                    Text("Settings")
+                    Label("Home", systemImage: "house")
                 }
-                .tag(Destination.settings)
-
-            ShopView(coins: $coins)
-                .tabItem {
-                    Image("shop")
-                    Text("Shop")
-                }
-                .tag(Destination.shop)
-
+            
             CalendarView()
                 .tabItem {
-                    Image("calendar")
-                    Text("Calendar")
+                    Label("Calendar", systemImage: "calendar")
                 }
-                .tag(Destination.calendar)
+            
+            ShopView(coins: $coins)
+                .tabItem {
+                    Label("Shop", systemImage: "cart")
+                }
+            
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "gearshape")
+                }
         }
     }
 }
 
 struct MainTabView_Previews: PreviewProvider {
-    @State static var happiness: Double = 0.5
-    @State static var coins: Int = 0
-    @State static var selectedTab: Destination = .settings
-
     static var previews: some View {
-        MainTabView(happiness: $happiness, coins: $coins, selectedTab: $selectedTab)
+        MainTabView()
     }
 }

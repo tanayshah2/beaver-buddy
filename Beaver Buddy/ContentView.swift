@@ -81,7 +81,7 @@ struct ContentView: View {
             .navigationDestination(for: Destination.self) { destination in
                 switch destination {
                 case .settings:
-                    SettingsView(happiness: $happiness)
+                    SettingsView()
                 case .shop:
                     ShopView(coins: $coins)
                 case .calendar:
